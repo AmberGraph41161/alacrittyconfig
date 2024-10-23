@@ -1,0 +1,55 @@
+#Color: moonlight_ii_vscode
+
+[colors]
+#indexed_colors = [{ index = 0, color = ""},]
+transparent_background_colors = false
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+foreground = "#7f85a3"
+background = "#1e2030"
+#dim_foreground = ""
+#bright_foreground = ""
+#cursor = { text = "CellBackground", cursor = "CellForeground" }
+#vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
+
+[colors.search]
+#matches = { foreground = "", background = "" }
+#focused_match = {foreground = "", background = ""}
+
+[colors.hints]
+#start = { foreground = "", background = "" }
+#end = { foreground = "", background = "" }
+#line_indicator = { foreground = "", background = "" }
+#footer_bar = { foreground = "", background = "" }
+#selection = { foreground = "", background = "" }
+
+[colors.normal]
+black = "#444a73"
+red = "#ff5370"
+green = "#4fd6be"
+yellow = "#ffc777"
+blue = "#3e68d7"
+magenta = "#fc7b7b"
+cyan = "#86e1fc"
+white = "#d0d0d0"
+
+[colors.bright]
+black = "#828bb8"
+red = "#ff98a4"
+green = "#c3e88d"
+yellow = "#ffc777"
+blue = "#82aaff"
+magenta = "#ff966c"
+cyan = "#b4f9f8"
+white = "#5f8787"
+
+[colors.dim] #if not set, auto calculated off of normal colors
+#black = ""
+#red = ""
+#green = ""
+#yellow = ""
+#blue = ""
+#magenta = ""
+#cyan = ""
+#white = ""

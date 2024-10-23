@@ -1,0 +1,20 @@
+#AmberDefault Alacritty keybinds
+[keyboard]
+bindings = [
+	{ key = "C", mods = "Control | Shift", action = "Copy" },
+	{ key = "V", mods = "Control | Shift", action = "Paste" },
+	{ key = "Copy", mods = "Control | Shift", action = "Copy" },
+	{ key = "Paste", mods = "Control | Shift", action = "Paste" },
+	{ key = "Plus", mods = "Control", action = "IncreaseFontSize" },
+	{ key = "Equals", mods = "Control", action = "IncreaseFontSize" },
+	{ key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+	{ key = "_", mods = "Control", action = "DecreaseFontSize" },
+	{ key = "0", mods = "Control", action = "ResetFontSize" },
+	{ key = ")", mods = "Control", action = "ResetFontSize" },
+	{ key = "F11", mods = "None", action = "ToggleFullscreen" },
+	{ key = "L", mods = "Control | Shift", action = "ClearLogNotice" },
+	{ key = "PageUp", mods = "None", action = "ScrollPageUp" },
+	{ key = "PageDown", mods = "None", action = "ScrollPageDown" },
+	{ key = "Home", mods = "Control", action = "ScrollToTop" },
+	{ key = "End", mods = "Control", action = "ScrolltoBottom" },
+]

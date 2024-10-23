@@ -1,0 +1,92 @@
+#Friday, Januray 12, 2024, 3:11:03PM, man this is tiring. Rewriting config cuz alacritty migrate is broken
+#Friday, Januray 12, 2024, 3:59:23PM, finally finished and satisfied with new toml config. What a hassle
+
+#shell = { program = "/bin/zsh", args = ["",] }
+shell = "/bin/zsh"
+#working_directory = "~" # <--- breaks startup of alacritty. Friday, Januray 12, 2024, 3:54:27PM
+live_config_reload = true
+#ipc_socket = true
+
+import = [
+"~/.config/alacritty/keybinds/AmberDefault.toml",
+"~/.config/alacritty/colors/HorizonDark.toml"
+#"~/.config/alacritty/colors/Hyper.toml"
+#"~/.config/alacritty/colors/moonlight_ii_vscode.toml"
+]
+
+[env]
+#WINIT_X11_SCALE_FACTOR = "1.0"
+
+[terminal]
+#osc52 = "OnlyCopy"
+
+[bell]
+animation = "EaseOutExpo"
+duration = 1
+color = "#ff005f"
+#command = { program = "", args = ["",] }
+
+[scrolling]
+history = 10000
+multiplier = 1
+
+[selection]
+#semantic_escape_chars = ""
+save_to_clipboard = false
+
+[window]
+#title = "| ~^_^~ ~^_^~ | ALACRITTY | ~^_^~ ~^_^~ |"
+title = "Alacritty"
+dynamic_title = true
+startup_mode = "Maximized"
+decorations = "Full"
+decorations_theme_variant = "None"
+opacity = 0.85
+#blur = true
+
+#class = { instance = "Alacritty", general = "Alacritty" }
+#resize_increments = false
+padding = { x = 0, y = 0 }
+dynamic_padding = false
+#dimensions = { columns = 0, lines = 0 }
+#position = { x = 0, y = 0 }
+
+#option_as_alt = true #for MacOS lololol
+
+[font]
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+bold = { family = "Hack Nerd Font Mono", style = "Bold" }
+italic = { family = "Hack Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "Hack Nerd Font Mono", style = "Bold Italic" }
+
+size = 10.0
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+[cursor]
+style = { shape = "Block", blinking = "off" }
+vi_mode_style = { shape = "block", blinking = "always" }
+#blink_interval = 750
+#blink_timeout = 5
+unfocused_hollow = true
+#thickness = 0.15
+
+[mouse]
+hide_when_typing = false
+bindings = [
+	{ mouse = "Middle", mods = "None", action = "PasteSelection" },
+]
+
+[hints]
+#alphabet = ""
+#enabled = [{ regex = "", hyperlinks = true, post_processing = true, persist = true, action = "Copy", command = { program = "", args = ["",] } binding = { key = "", mods = "", mode = "" }, mouse = { mods = "", enabled = true }, }]
+
+[debug]
+#render_timer = false
+#persistent_logging = false
+#log_level = "Warn"
+#renderer = "None"
+#print_event = false
+#highlight_damage = false
+#prefer_egl = false
